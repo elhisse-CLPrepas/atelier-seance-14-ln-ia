@@ -1,0 +1,15 @@
+# Keep generated files and embedded resources byte-identical on Windows.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.zip binary
+
+# Two trailing spaces are intentional Markdown line breaks.
+*.md whitespace=-blank-at-eol

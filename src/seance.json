@@ -1,0 +1,832 @@
+{
+  "questions": [
+    [
+      "01 · Source",
+      "Quel passage vous autorise à l’écrire ?",
+      "Reprenez la trace S13. Gardez le statut de la source, puis relevez deux faits avec leurs emplacements."
+    ],
+    [
+      "02 · Invariants",
+      "Que faut-il garder dans les trois versions ?",
+      "Fixez le même public, les deux faits, l’objectif et une seule action. Les exemples parlent à des formateurs débutants."
+    ],
+    [
+      "03 · Première rédaction",
+      "Comment l’écririez-vous sans assistance ?",
+      "Rédigez deux ou trois phrases avec vos mots. Soulignez l’action et conservez cette première rédaction."
+    ],
+    [
+      "04 · Variantes",
+      "Qu’est-ce qui peut changer ?",
+      "Le ton, la longueur, le vocabulaire et l’ordre des phrases. L’assistant produit une version courte, une chaleureuse et une professionnelle."
+    ],
+    [
+      "05 · Choix",
+      "Quels mots conviennent au lecteur ?",
+      "Comparez les trois débuts de message. Expliquez ce que le lecteur comprendra ou pourra faire plus facilement, puis choisissez un canal."
+    ],
+    [
+      "06 · Correction",
+      "Que pouvez-vous expliquer au formateur ?",
+      "Conservez le passage d’origine, votre réécriture, la raison et le message retenu en entier. Préparez deux textes à comparer en S15."
+    ]
+  ],
+  "roles": [
+    [
+      "Candidat",
+      "Rédige le premier message, ouvre les sources, choisit le canal et corrige la version retenue."
+    ],
+    [
+      "Assistant de rédaction",
+      "Propose trois formulations à partir de la fiche fournie. Une proposition reste un brouillon."
+    ],
+    [
+      "Agent comparateur",
+      "Peut lire les fichiers fictifs autorisés et rendre un relevé par variante. Il cite le passage correspondant et rend la main."
+    ],
+    [
+      "Python",
+      "Compte les caractères et les occurrences exactes de la demande. Une deuxième invitation rédigée autrement peut lui échapper."
+    ],
+    [
+      "Jupyter",
+      "Le cahier affiche les instructions et les résultats de son noyau Python. Le formateur y rejoue les mesures devant le groupe."
+    ],
+    [
+      "Pilote humain",
+      "Observe la preuve, consigne sa décision et traite séparément toute autorisation de diffusion."
+    ]
+  ],
+  "cards": [
+    [
+      "Que faut-il ouvrir en arrivant de S13 ?",
+      "La fiche de faits, le passage source et le message que vous avez rédigé."
+    ],
+    [
+      "Qu’est-ce qui reste commun aux trois variantes ?",
+      "Le public, l’objectif, les deux faits vérifiables et l’action demandée."
+    ],
+    [
+      "Pourquoi conserver la version humaine ?",
+      "Elle montre le point de départ et permet d’expliquer ce que l’assistance puis votre correction ont changé."
+    ],
+    [
+      "Quel livrable demander à un agent comparateur ?",
+      "Un tableau par variante avec l’affirmation, le passage d’appui et les écarts à examiner."
+    ],
+    [
+      "Une occurrence exacte de l’action suffit-elle ?",
+      "Relisez le sens. Une demande supplémentaire peut employer d’autres mots et échapper au comptage."
+    ],
+    [
+      "Un canal professionnel impose-t-il un vocabulaire technique ?",
+      "Le vocabulaire dépend aussi du lecteur. Dans le courriel de l’exemple, on simplifie une phrase pour des formateurs débutants."
+    ],
+    [
+      "Où interviennent Python et Jupyter ?",
+      "Python exécute les mesures prévues. Jupyter présente les cellules et leurs résultats pour les observer."
+    ],
+    [
+      "Quels éléments emporter en S15 ?",
+      "Deux variantes, un fait qui doit rester stable, une différence de formulation et une règle de contrôle à essayer."
+    ]
+  ],
+  "quiz": [
+    [
+      "Quel est le point de départ de la séance ?",
+      [
+        "Demander trois messages avant de choisir le public",
+        "Relire la trace S13 et écrire sa version humaine",
+        "Choisir le texte le plus court"
+      ],
+      1,
+      "La personne fixe d’abord les faits, le lecteur et l’action, puis écrit avec ses mots."
+    ],
+    [
+      "Quels éléments garder dans les trois formulations ?",
+      [
+        "Le même nombre de mots",
+        "Trois canaux et trois destinataires différents",
+        "Le public, les faits et l’action"
+      ],
+      2,
+      "Ces invariants permettent de comparer l’effet du ton et de la longueur."
+    ],
+    [
+      "Quel mandat convient à l’agent comparateur ?",
+      [
+        "Relever un passage d’appui et un écart pour chaque brouillon",
+        "Valider et envoyer la variante la plus chaleureuse",
+        "Retenir le texte qui garantit le meilleur résultat"
+      ],
+      0,
+      "Le mandat limite les fichiers, les outils, la sortie attendue et le moment où l’agent rend la main."
+    ],
+    [
+      "Python compte une seule occurrence de votre question finale. Le texte ajoute « Inscrivez-vous aussi ». Que concluez-vous ?",
+      [
+        "Le texte demande une seule action",
+        "Une seconde action apparaît à la lecture",
+        "Python a vérifié les faits"
+      ],
+      1,
+      "Un comptage littéral peut ignorer une demande rédigée avec d’autres mots."
+    ],
+    [
+      "Quelle justification rend le choix du courriel défendable ?",
+      [
+        "Le plus long est automatiquement professionnel",
+        "L’IA préfère ce canal",
+        "Ces formateurs peuvent répondre directement à la demande d’extrait"
+      ],
+      2,
+      "Un choix de canal s’explique par les habitudes du lecteur et l’action qu’il peut accomplir."
+    ],
+    [
+      "Quelles pièces rendre avant S15 ?",
+      [
+        "La version humaine, A/B/C, leur comparaison, le canal et le texte corrigé avec sa raison",
+        "Le score du quiz et une capture de l’accueil",
+        "Uniquement la variante professionnelle"
+      ],
+      0,
+      "La preuve rend visible le travail personnel, les trois propositions et la décision du candidat."
+    ]
+  ],
+  "prompts": [
+    [
+      "01 · Reprendre S13",
+      "Agent lecteur",
+      "Sur les deux fichiers fictifs du guide S12 et de son journal, relève deux faits utilisables dans un message pour des formateurs débutants. Pour chaque fait, cite le fichier, la rubrique et un court passage. Travaille en lecture seule. Si un appui manque, marque « à confirmer ». Arrête-toi après les deux références."
+    ],
+    [
+      "02 · Écrire à partir du brouillon humain",
+      "Assistant de rédaction",
+      "Voici ma fiche fictive et ma version humaine, à coller ci-dessous. Rédige trois variantes pour le même public : A courte et directe, B chaleureuse et C professionnelle. Conserve les deux faits, le bénéfice établi et une seule action finale. Pour chaque variante, précise le ton et un canal possible. Écarte les faits absents et liste-les à part sous « à confirmer ». Termine par deux points que je dois vérifier. Fiche : [public, objectif, faits et action]. Version humaine : [mon texte]."
+    ],
+    [
+      "03 · Comparer et rendre la main",
+      "Agent comparateur",
+      "Lis seulement la fiche fictive, le journal autorisé et les trois brouillons. Rends trois lignes A, B et C et cinq colonnes : variante, fait conservé et passage d’appui, ton et longueur, action demandée, raison de conserver ou de revoir. Si tu n’as pas exécuté de comptage, indique « non mesuré ». Cherche une seconde invitation même si elle est formulée autrement. N’écris dans aucun fichier. Arrête-toi après le tableau. Je choisirai le texte et le canal."
+    ],
+    [
+      "04 · Préparer la revue",
+      "Assistant de relecture",
+      "Voici la version brute, le passage corrigé et mon texte retenu. Vérifie si je peux retrouver le fait dans la source, si le canal sert le lecteur et si je donne une raison précise au changement. Signale les points à reprendre. Termine par une question pour S15 sur ce qu’une règle pourrait mesurer. La décision de validation appartient au pilote."
+    ]
+  ],
+  "criteres": [
+    "Je peux rouvrir la source S13 et montrer les deux faits retenus.",
+    "Ma rédaction personnelle et les trois variantes distinctes sont conservées.",
+    "Ma comparaison nomme les faits, le ton, la longueur et l’action.",
+    "J’ai expliqué le canal choisi et conservé l’avant, l’après, la raison et le texte retenu.",
+    "Je peux présenter deux variantes et une règle à essayer en S15."
+  ],
+  "champs": [
+    [
+      "source",
+      "Source et repère S13",
+      "Titre, version ou statut, rubrique ou page."
+    ],
+    [
+      "message13",
+      "Message rapporté de S13",
+      "Collez le premier message pour garder votre point de départ."
+    ],
+    [
+      "public",
+      "Public",
+      "Qui doit pouvoir lire ce message ?"
+    ],
+    [
+      "objectif",
+      "Objectif",
+      "Que doit comprendre ce lecteur ?"
+    ],
+    [
+      "fait1",
+      "Premier fait et emplacement",
+      "Fait et passage du guide qui l’appuie."
+    ],
+    [
+      "fait2",
+      "Second fait et emplacement",
+      "Fait et passage du journal ou de votre source."
+    ],
+    [
+      "action",
+      "Action unique",
+      "Écrivez la demande adressée au lecteur."
+    ],
+    [
+      "humaine",
+      "Ma version humaine S14",
+      "Deux ou trois phrases écrites avec vos mots avant d’utiliser l’IA."
+    ],
+    [
+      "a",
+      "A · Courte et directe",
+      "Conservez la proposition brute."
+    ],
+    [
+      "b",
+      "B · Chaleureuse",
+      "Conservez la proposition brute."
+    ],
+    [
+      "c",
+      "C · Professionnelle",
+      "Conservez la proposition brute."
+    ],
+    [
+      "a_faits",
+      "Faits et appui",
+      "Quel fait et quel passage ?"
+    ],
+    [
+      "a_ton",
+      "Ton et longueur",
+      "Quel mot ou quelle longueur change la lecture ?"
+    ],
+    [
+      "a_action",
+      "Action",
+      "Même demande ? Seconde invitation éventuelle ?"
+    ],
+    [
+      "a_choix",
+      "Choix et raison",
+      "À retenir, adapter ou écarter ? Pourquoi ?"
+    ],
+    [
+      "b_faits",
+      "Faits et appui",
+      "Quel fait et quel passage ?"
+    ],
+    [
+      "b_ton",
+      "Ton et longueur",
+      "Quel mot ou quelle longueur change la lecture ?"
+    ],
+    [
+      "b_action",
+      "Action",
+      "Même demande ? Seconde invitation éventuelle ?"
+    ],
+    [
+      "b_choix",
+      "Choix et raison",
+      "À retenir, adapter ou écarter ? Pourquoi ?"
+    ],
+    [
+      "c_faits",
+      "Faits et appui",
+      "Quel fait et quel passage ?"
+    ],
+    [
+      "c_ton",
+      "Ton et longueur",
+      "Quel mot ou quelle longueur change la lecture ?"
+    ],
+    [
+      "c_action",
+      "Action",
+      "Même demande ? Seconde invitation éventuelle ?"
+    ],
+    [
+      "c_choix",
+      "Choix et raison",
+      "À retenir, adapter ou écarter ? Pourquoi ?"
+    ],
+    [
+      "choix",
+      "Variante retenue",
+      "Choisissez A, B ou C."
+    ],
+    [
+      "canal",
+      "Canal choisi",
+      "Courriel, groupe, message professionnel…"
+    ],
+    [
+      "raisoncanal",
+      "Pourquoi ce canal et cette variante ?",
+      "Reliez votre choix aux habitudes du lecteur et à l’action."
+    ],
+    [
+      "avant",
+      "Avant · passage d’origine",
+      "Copiez le passage de la variante retenue."
+    ],
+    [
+      "apres",
+      "Après · passage corrigé",
+      "Votre correction exacte."
+    ],
+    [
+      "motif",
+      "Raison de la correction",
+      "Quel mot ou fait avez-vous changé pour ce public ?"
+    ],
+    [
+      "final",
+      "Mon message retenu, en entier",
+      "Rédigez la version complète après correction."
+    ],
+    [
+      "regle",
+      "Ma question pour S15",
+      "Quel fait reste stable ? Quelle règle voudriez-vous tester sur deux variantes ?"
+    ]
+  ],
+  "rubriques": [
+    [
+      "accueil",
+      "Accueil",
+      "home"
+    ],
+    [
+      "presentation",
+      "Présentation",
+      "play"
+    ],
+    [
+      "methode",
+      "Méthode",
+      "compass"
+    ],
+    [
+      "demonstration",
+      "Démonstration",
+      "layers"
+    ],
+    [
+      "atelier",
+      "Atelier",
+      "edit"
+    ],
+    [
+      "prompts",
+      "Prompts",
+      "braces"
+    ],
+    [
+      "flashcards",
+      "Flashcards",
+      "cards"
+    ],
+    [
+      "quiz",
+      "Quiz",
+      "help"
+    ],
+    [
+      "validation",
+      "Validation",
+      "check"
+    ],
+    [
+      "portfolio",
+      "Portfolio",
+      "folder"
+    ],
+    [
+      "ressources",
+      "Ressources",
+      "book"
+    ]
+  ],
+  "cal": [
+    [
+      "13",
+      "VEN. 06 NOV.",
+      "Comprendre",
+      "Repérer les faits dans le guide S12 et expliquer une décision."
+    ],
+    [
+      "14",
+      "LUN. 09 NOV.",
+      "Manipuler",
+      "Comparer trois formulations et justifier une correction."
+    ],
+    [
+      "15",
+      "VEN. 13 NOV.",
+      "Approfondir",
+      "Tester une condition et en expliquer la limite."
+    ],
+    [
+      "16",
+      "LUN. 16 NOV.",
+      "Produire",
+      "Exécuter un notebook, corriger puis rouvrir l’export local."
+    ]
+  ],
+  "slides": [
+    [
+      "Un message, trois variantes",
+      "Communication assistée et automatisation progressive",
+      [
+        "Lundi 9 novembre 2026 · S14",
+        "Atelier guidé de 90 minutes",
+        "Prof. Abderrahman El Hisse"
+      ],
+      "Accueil, 0–10 min. Ouvrez la trace S13 et le guide fictif. Annoncez le résultat demandé : une version humaine, trois formulations comparées et un message corrigé pour un canal choisi."
+    ],
+    [
+      "Changer le ton, garder le sens",
+      "À partir de votre message S13, comment changer le ton sans changer les faits ni l’action demandée au lecteur ?",
+      [
+        "Relisez votre phrase source.",
+        "Soulignez l’action proposée au lecteur."
+      ],
+      "0–10 min. Laissez une minute de réflexion. Demandez à deux candidats quel fait disparaîtrait si leur message devenait plus court. Faites reformuler l’action à voix haute."
+    ],
+    [
+      "Reprendre la trace de S13",
+      "Ouvrez votre message et retrouvez le passage qui vous autorise à l’écrire.",
+      [
+        "S12 · Guide pratique, V2 à relire.",
+        "S13 · Une fiche de faits et un premier message.",
+        "S14 · Trois variantes à comparer sur la même base."
+      ],
+      "0–10 min. Cas fictif : « Le rôle de l’humain dans la production avec l’IA ». Le guide s’intitule « Produire avec l’IA sous responsabilité humaine — Guide pratique ». Ouvrez le journal V1/V2 et la section « Produire », étape 5 du guide. Avec les candidats sans dossier, présentez le cas de Samira : son mini-guide contient un planning de révisions et une liste de vérification. L’action est de demander un aperçu."
+    ],
+    [
+      "Fixer les faits et l’action",
+      "Formateurs débutants qui relisent un premier support produit avec l’IA.",
+      [
+        "Le dossier conserve les versions V1 et V2 du guide.",
+        "Le journal explique les corrections et leurs raisons.",
+        "Souhaitez-vous voir un extrait du journal de corrections ?"
+      ],
+      "Démonstration, 10–20 min. Le guide et son journal forment la fiche fictive autorisée. Faites retrouver les versions et les raisons des corrections. Un candidat peut partager sa fiche fictive. Gardez cette même fiche pour les trois variantes."
+    ],
+    [
+      "Écrire d’abord avec vos mots",
+      "J’ai gardé les deux versions du guide. Le journal dit ce que j’ai changé et pourquoi. Souhaitez-vous voir un extrait du journal de corrections ?",
+      [
+        "Travail individuel · 15 minutes.",
+        "Gardez la version humaine pour la comparaison."
+      ],
+      "20–35 min. Montrez cette version de démonstration et demandez à chaque candidat de rédiger sa propre version. Faites souligner l’action et préciser le public. Le texte initial peut être imparfait."
+    ],
+    [
+      "Demander trois formulations",
+      "Donnez à l’assistant la fiche fictive et votre version humaine.",
+      [
+        "A · Courte et directe.",
+        "B · Chaleureuse.",
+        "C · Professionnelle.",
+        "Conservez les deux faits, le public et une seule action."
+      ],
+      "35–55 min. Mission de l’assistant : proposer trois brouillons, signaler à part les informations à confirmer et s’arrêter. Les projets personnels restent sur les postes des candidats. En l’absence de connexion, utilisez les trois brouillons préparés dans ce support."
+    ],
+    [
+      "A · Une entrée directe",
+      "Le dossier conserve V1 et V2 du guide. Le journal explique chaque correction et sa raison. Souhaitez-vous voir un extrait du journal de corrections ?",
+      [
+        "Le message commence par le dossier.",
+        "Que gagne le lecteur si le contexte est bref ?"
+      ],
+      "35–55 min. Variante préparée pour l’exercice. Lire d’une seule traite puis demander de retrouver les deux faits et l’action unique. Le mot « directe » désigne la manière d’entrer dans le message."
+    ],
+    [
+      "B · Un ton chaleureux",
+      "Bonjour, si vous relisez votre premier support, vous pouvez comparer V1 et V2 du guide. Le journal explique ce qui a changé et pourquoi. Souhaitez-vous voir un extrait du journal de corrections ?",
+      [
+        "Le message salue le lecteur et évoque sa situation.",
+        "Comment l’ouverture modifie-t-elle votre lecture ?"
+      ],
+      "35–55 min. Faire relever « Bonjour » et « si vous relisez votre premier support ». Le public reste celui des formateurs débutants. Demandez quelles parties pourraient être raccourcies sans perte de sens."
+    ],
+    [
+      "C · Une formulation professionnelle",
+      "Le dossier conserve les versions V1 et V2 du guide. Le journal documente les modifications et leurs motifs. Souhaitez-vous voir un extrait du journal de corrections ?",
+      [
+        "Le texte emploie « documente » et « motifs ».",
+        "Ces mots conviennent-ils à un lecteur débutant ?"
+      ],
+      "35–55 min. Faire repérer le vocabulaire documentaire. Demander si l’on peut conserver la précision en adoptant des mots plus familiers. Réserver la décision au candidat."
+    ],
+    [
+      "Comparer les trois brouillons",
+      "Lisez les textes côte à côte avant de choisir un canal.",
+      [
+        "A · 149 caractères · entrée immédiate dans le dossier.",
+        "B · 195 caractères · salutation et situation du lecteur.",
+        "C · 166 caractères · vocabulaire documentaire.",
+        "Chaque texte garde les deux faits et l’action choisie."
+      ],
+      "55–70 min. Dans la fiche candidat, compléter variante, fait conservé, ton et longueur, action, choix et raison. Les longueurs comprennent espaces et ponctuation, sans les guillemets de présentation. Une longueur mesurée ne dispense pas de comparer chaque fait au journal."
+    ],
+    [
+      "Confier le relevé à un agent",
+      "Donnez à l’agent comparateur un mandat en lecture seule.",
+      [
+        "Entrées · le guide, le journal et les trois brouillons fictifs.",
+        "Sortie · un passage d’appui ou « à confirmer » pour chaque affirmation.",
+        "Arrêt · rendre le tableau au candidat, qui choisira."
+      ],
+      "55–70 min. Reprendre la capsule de fin du Module 03 : nommer le fichier, la permission de lecture, le résultat et le point d’arrêt. Un agent équipé peut chercher dans les documents autorisés. La démonstration reste utilisable avec les résultats préparés."
+    ],
+    [
+      "Observer ce que Python compte",
+      "Dans Jupyter, le noyau Python exécute les cellules et affiche les résultats.",
+      [
+        "A · 149 caractères",
+        "B · 195 caractères",
+        "C · 166 caractères",
+        "Le même appel à l’action apparaît une fois dans chaque texte."
+      ],
+      "55–70 min. Ouvrez le script ou le notebook préparé. Faites prédire la longueur la plus grande avant de lancer le calcul. L’ordinateur compte avec len et repère l’action écrite. Proposez la phrase intruse « Ce guide garantit un document sans erreur. » Le journal ne la justifie pas."
+    ],
+    [
+      "Choisir le canal et expliquer pourquoi",
+      "Pour les formateurs débutants, retenons le courriel professionnel dans cet exemple.",
+      [
+        "Choix de départ · variante C.",
+        "Le courriel adresse une demande précise à un destinataire identifié.",
+        "Le candidat peut retenir un autre canal en justifiant son choix."
+      ],
+      "55–70 min. Demandez « Quels mots conviennent à votre lecteur ? » puis « Par quel canal pourrait-il vous répondre ? » Les simulations d’été sur LinkedIn restent un exemple de canal. Aucun envoi ni publication pendant l’atelier."
+    ],
+    [
+      "Corriger une phrase de la variante C",
+      "Ces mots décrivent plus simplement le contenu du journal pour un formateur débutant.",
+      [
+        "Le journal documente les modifications et leurs motifs.",
+        "Le journal explique ce qui a changé et pourquoi."
+      ],
+      "70–85 min. Faites lire l’original puis la phrase corrigée. Le candidat indique le problème, la correction et sa raison. Vérifiez que les deux faits et l’action unique sont toujours présents."
+    ],
+    [
+      "Relire la version retenue",
+      "Le dossier conserve les versions V1 et V2 du guide. Le journal explique ce qui a changé et pourquoi. Souhaitez-vous voir un extrait du journal de corrections ?",
+      [
+        "Canal retenu dans le cas fictif · courriel professionnel.",
+        "Statut du texte · brouillon à relire."
+      ],
+      "70–85 min. Ouvrez le journal et faites justifier la nouvelle formulation. Le texte final reste un exemple fictif de correction humaine. Le candidat conserve dans son livrable son propre avant/après ainsi que sa version retenue."
+    ],
+    [
+      "Faire relire en binôme",
+      "Le partenaire restitue le fait, l’action et la raison du choix.",
+      [
+        "Quel passage du guide soutient votre message ?",
+        "Que demandez-vous au lecteur de faire ?",
+        "Pourquoi ces mots et ce canal lui conviennent-ils ?"
+      ],
+      "70–85 min. Demandez une restitution d’une minute chacun. Si 30 minutes s’ajoutent à la séance, prenez 10 minutes pour échanger les messages, 10 pour reformuler l’action et 10 pour reprendre les corrections. Pour Samira, le bénéfice demeure la planification hebdomadaire et l’action est de demander un aperçu."
+    ],
+    [
+      "Classer la preuve de S14",
+      "Montrez la version humaine, les trois variantes et la correction justifiée.",
+      [
+        "04-communication/message-court-projet.md",
+        "preuve-14-message-projet-et-variantes",
+        "07-portfolio/preuves-module-04.md"
+      ],
+      "85–90 min. Ouvrir le fichier classé et vérifier la comparaison, le canal motivé, le passage avant/après, la raison et le texte retenu. Ajouter une entrée au portfolio. L’observation du formateur et la décision du pilote sont renseignées uniquement après revue réelle."
+    ],
+    [
+      "Vendredi 13 novembre · S15",
+      "Apportez deux variantes et le passage qui justifie leur contenu.",
+      [
+        "Repérez une information stable.",
+        "Choisissez une variable qui change avec le ton.",
+        "Proposez une règle que le groupe pourra tester."
+      ],
+      "Clôture. En S15, le groupe distinguera les faits des choix de formulation et testera la portée d’une règle. Le seuil de 400 caractères est un exemple pédagogique. En S16, lundi 16 novembre, le candidat utilisera le notebook guidé et rouvrira son export corrigé."
+    ],
+    [
+      "Module 04 · Communication assistée",
+      "Comprendre, manipuler, approfondir, produire. L’humain contrôle et décide.",
+      [],
+      "Projeter cette affiche et faire expliquer le lien avec la séance 14."
+    ],
+    [
+      "S13 · Du guide S12 au message",
+      "Relier chaque affirmation à sa source et justifier une correction.",
+      [],
+      "Projeter cette affiche et faire expliquer le lien avec la séance 14."
+    ],
+    [
+      "S14 · Un message, trois variantes",
+      "Comparer les tons direct, chaleureux et professionnel en conservant les faits et une action.",
+      [],
+      "Projeter cette affiche et faire expliquer le lien avec la séance 14."
+    ],
+    [
+      "S15 · Que vérifie une règle ?",
+      "Tester 400 et 401 caractères ; vérifier la fidélité dans la source.",
+      [],
+      "Projeter cette affiche et faire expliquer le lien avec la séance 14."
+    ],
+    [
+      "S16 · Du notebook au message corrigé",
+      "Exécuter, modifier, corriger, exporter et rouvrir pour retrouver la correction.",
+      [],
+      "Projeter cette affiche et faire expliquer le lien avec la séance 14."
+    ]
+  ],
+  "groups": [
+    [
+      "À projeter et à animer",
+      [
+        [
+          "projection/seance-14-un-message-trois-variantes.pptx",
+          "Diaporama éditable avec notes",
+          "PPTX"
+        ],
+        [
+          "projection/seance-14-un-message-trois-variantes.pdf",
+          "Diaporama de projection",
+          "PDF"
+        ],
+        [
+          "documents/conducteur-formateur-s14.pdf",
+          "Conducteur formateur · 90 minutes",
+          "PDF"
+        ],
+        [
+          "documents/conducteur-formateur-s14.docx",
+          "Conducteur modifiable",
+          "DOCX"
+        ],
+        [
+          "atelier/affiche-s14.png",
+          "Affiche · lundi 9 novembre 2026",
+          "PNG"
+        ]
+      ]
+    ],
+    [
+      "À remettre ou à corriger",
+      [
+        [
+          "documents/fiche-candidat-s14.pdf",
+          "Fiche candidat remplissable ou imprimable",
+          "PDF"
+        ],
+        [
+          "documents/fiche-candidat-s14.docx",
+          "Fiche candidat modifiable",
+          "DOCX"
+        ],
+        [
+          "documents/corrige-comparaison-s14.pdf",
+          "Corrigé de la comparaison A/B/C",
+          "PDF"
+        ],
+        [
+          "documents/corrige-comparaison-s14.docx",
+          "Corrigé modifiable",
+          "DOCX"
+        ],
+        [
+          "atelier/message-court-projet.md",
+          "Modèle du livrable candidat",
+          "MD"
+        ],
+        [
+          "atelier/preuves-module-04.md",
+          "Entrée de preuve à ajouter au portfolio",
+          "MD"
+        ],
+        [
+          "atelier/secours-samira.md",
+          "Cas de remplacement et trois brouillons hors ligne",
+          "MD"
+        ]
+      ]
+    ],
+    [
+      "Démonstration et agents",
+      [
+        [
+          "demo/cas-guide.json",
+          "Fiche fictive, textes A/B/C et correction",
+          "JSON"
+        ],
+        [
+          "demo/comparer-variantes-s14.py",
+          "Comparateur de textes Python",
+          "PY"
+        ],
+        [
+          "demo/comparer-variantes-s14.ipynb",
+          "Notebook Jupyter de la démonstration",
+          "IPYNB"
+        ],
+        [
+          "demo/sorties-observees-s14.md",
+          "Résultats du comparateur hors ligne",
+          "MD"
+        ],
+        [
+          "demo/mission-agent-comparateur.md",
+          "Mission de l’agent comparateur",
+          "MD"
+        ],
+        [
+          "atelier/prompts-seance-14.md",
+          "Les quatre prompts de l’atelier",
+          "MD"
+        ]
+      ]
+    ],
+    [
+      "De S12 à S15",
+      [
+        [
+          "sources/trace-s13-exemple-fictif.md",
+          "Exemple de trace S13 à importer",
+          "MD"
+        ],
+        [
+          "sources/guide-pratique-v2-a-relire.md",
+          "Guide S12 · V2 à relire",
+          "MD"
+        ],
+        [
+          "sources/journal-corrections-v1-v2.md",
+          "Journal du guide · avant et après",
+          "MD"
+        ],
+        [
+          "atelier/capsule-fin-module-03.md",
+          "Capsule Module 03 · introduire l’agent",
+          "MD"
+        ],
+        [
+          "sources/prompt-maitre-module-04.md",
+          "Prompt maître du Module 04",
+          "MD"
+        ]
+      ]
+    ],
+    [
+      "Affiches du Module 04",
+      [
+        [
+          "affiches/module-04.png",
+          "Module 04 · Communication assistée",
+          "PNG"
+        ],
+        [
+          "affiches/seance-13.png",
+          "S13 · Du guide S12 au message",
+          "PNG"
+        ],
+        [
+          "affiches/seance-14.png",
+          "S14 · Un message, trois variantes",
+          "PNG"
+        ],
+        [
+          "affiches/seance-15.png",
+          "S15 · Que vérifie une règle ?",
+          "PNG"
+        ],
+        [
+          "affiches/seance-16.png",
+          "S16 · Du notebook au message corrigé",
+          "PNG"
+        ]
+      ]
+    ]
+  ],
+  "affiches": [
+    {
+      "title": "Module 04 · Communication assistée",
+      "summary": "Comprendre, manipuler, approfondir, produire. L’humain contrôle et décide.",
+      "path": "affiches/module-04.png",
+      "slide": 18
+    },
+    {
+      "title": "S13 · Du guide S12 au message",
+      "summary": "Relier chaque affirmation à sa source et justifier une correction.",
+      "path": "affiches/seance-13.png",
+      "slide": 19
+    },
+    {
+      "title": "S14 · Un message, trois variantes",
+      "summary": "Comparer les tons direct, chaleureux et professionnel en conservant les faits et une action.",
+      "path": "affiches/seance-14.png",
+      "slide": 20
+    },
+    {
+      "title": "S15 · Que vérifie une règle ?",
+      "summary": "Tester 400 et 401 caractères ; vérifier la fidélité dans la source.",
+      "path": "affiches/seance-15.png",
+      "slide": 21
+    },
+    {
+      "title": "S16 · Du notebook au message corrigé",
+      "summary": "Exécuter, modifier, corriger, exporter et rouvrir pour retrouver la correction.",
+      "path": "affiches/seance-16.png",
+      "slide": 22
+    }
+  ]
+}

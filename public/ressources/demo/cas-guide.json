@@ -1,0 +1,38 @@
+{
+  "titre": "Un message, trois variantes",
+  "ouverture": "À partir de votre message S13, comment changer le ton sans changer les faits ni l’action demandée au lecteur ?",
+  "public": "Formateurs débutants qui relisent un premier support produit avec l’IA.",
+  "objectif": "Faire comprendre comment le dossier permet de suivre une révision et proposer un extrait du journal.",
+  "fait1": "Le dossier conserve les versions V1 et V2 du guide.",
+  "fait2": "Le journal explique les corrections et leurs raisons.",
+  "action": "Souhaitez-vous voir un extrait du journal de corrections ?",
+  "humaine": "J’ai gardé les deux versions du guide. Le journal dit ce que j’ai changé et pourquoi. Souhaitez-vous voir un extrait du journal de corrections ?",
+  "variantes": [
+    {
+      "id": "A",
+      "ton": "Courte et directe",
+      "texte": "Le dossier conserve V1 et V2 du guide. Le journal explique chaque correction et sa raison. Souhaitez-vous voir un extrait du journal de corrections ?"
+    },
+    {
+      "id": "B",
+      "ton": "Chaleureuse",
+      "texte": "Bonjour, si vous relisez votre premier support, vous pouvez comparer V1 et V2 du guide. Le journal explique ce qui a changé et pourquoi. Souhaitez-vous voir un extrait du journal de corrections ?"
+    },
+    {
+      "id": "C",
+      "ton": "Professionnelle",
+      "texte": "Le dossier conserve les versions V1 et V2 du guide. Le journal documente les modifications et leurs motifs. Souhaitez-vous voir un extrait du journal de corrections ?"
+    }
+  ],
+  "choix": "C",
+  "canal": "Courriel professionnel",
+  "avant": "Le journal documente les modifications et leurs motifs.",
+  "apres": "Le journal explique ce qui a changé et pourquoi.",
+  "motif": "Ces mots décrivent plus simplement le contenu du journal pour un formateur débutant.",
+  "intrus": "Ce guide garantit un document sans erreur.",
+  "s15": "Vendredi 13 novembre 2026",
+  "preuve": "preuve-14-message-projet-et-variantes",
+  "trace": "04-communication/message-court-projet.md",
+  "index": "07-portfolio/preuves-module-04.md",
+  "final": "Le dossier conserve les versions V1 et V2 du guide. Le journal explique ce qui a changé et pourquoi. Souhaitez-vous voir un extrait du journal de corrections ?"
+}
