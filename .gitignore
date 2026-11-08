@@ -1,4 +1,5 @@
 # Dependencies and local caches
+/mon-dossier-challenge-module04/
 node_modules/
 .npm/
 .vite/

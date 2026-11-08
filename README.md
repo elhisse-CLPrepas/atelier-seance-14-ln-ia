@@ -73,6 +73,20 @@ Les dépendances ont été installées et les livrables reconstruits après int�
 
 ## Versionnement local
 
+Dépôt distant : [elhisse-CLPrepas/atelier-seance-14-ln-ia](https://github.com/elhisse-CLPrepas/atelier-seance-14-ln-ia).
+
+Le sous-dossier `mon-dossier-challenge-module04/` est la copie de travail active pour les séances 13 à 16. Il possède son propre historique et son [dépôt distant](https://github.com/elhisse-CLPrepas/mon-dossier-challenge-module04). Il est exclu du dépôt de l’atelier 14 : effectuer ses commits et ses push depuis ce sous-dossier. Un clonage de l’atelier 14 ne le télécharge pas ; le récupérer séparément avec `git clone https://github.com/elhisse-CLPrepas/mon-dossier-challenge-module04.git mon-dossier-challenge-module04` depuis la racine de l’atelier.
+
+## Publication GitHub Pages
+
+Adresse prévue : [ouvrir l’atelier en ligne](https://elhisse-clprepas.github.io/atelier-seance-14-ln-ia/).
+
+Le workflow `.github/workflows/pages.yml` installe les dépendances avec Node.js 24, compile, exécute les contrôles et déploie uniquement `dist/`. Il se déclenche à chaque push sur `main` et peut être relancé depuis l’onglet Actions. Dans les paramètres du dépôt, la source de Pages doit être « GitHub Actions ». Les permissions d’écriture Pages sont limitées au job de déploiement ; les actions sont figées sur leurs empreintes de commit.
+
+Les chemins relatifs conservent la compatibilité avec le sous-dossier GitHub Pages et l’édition hors ligne. Le workflow renseigne `ATELIER_PUBLIC_URL` pour les métadonnées de partage. Le fichier autonome et les sources restent disponibles dans le dépôt.
+
+## Contenu versionné
+
 Le dépôt Git local conserve les sources, les ressources pédagogiques et les livrables prêts à ouvrir (`dist/`, `index.html`, `OUVRIR-SEANCE-14.html`). Les dépendances, caches, fichiers temporaires et secrets locaux sont exclus par `.gitignore`. Les fins de ligne sont fixées à LF pour préserver les contrôles d’identité binaire entre ressources et téléchargements embarqués.
 
 Après une modification des sources ou des ressources, lancer `npm.cmd run build`, puis `npm.cmd run check`, examiner `git diff --stat` et créer un commit. Les anciens rapports d’audit décrivent l’état du dossier au moment de leur rédaction.
