@@ -28,7 +28,7 @@ for(const m of [c.humaine,c.avant,c.apres,c.final,c.preuve,'149 caractères','16
 assert(ix.includes('../'+c.trace)&&ix.includes(c.preuve)&&ix.includes(c.motif)&&ix.includes('[en attente]'))
 assert.equal(await new Blob([tr],{type:'text/markdown;charset=utf-8'}).text(),tr)
 const files=d.groups.flatMap(([,entries])=>entries.map(([p])=>'ressources/'+p))
-assert.equal(files.length,28);assert.equal(new Set(files).size,files.length)
+assert.equal(files.length,32);assert.equal(new Set(files).size,files.length)
 assert.equal(d.affiches.length,5)
 for(const a of d.affiches){assert.equal(d.slides[a.slide][0],a.title);assert(files.includes('ressources/'+a.path))}
 const compiled=await read('dist/index.html'), standalone=await read('OUVRIR-SEANCE-14.html')
@@ -59,4 +59,4 @@ for(const a of d.affiches){
 new Script([...standalone.matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1])
 const css=await bytes('src/vendor/bootstrap.min.css');assert.equal(createHash('sha256').update(css).digest('hex'),'d85327d99c7a3ee1f9b5d0500d1370acea3ad2db39c163c2f51f232baedbdede')
 console.log('11 rubriques, 23 diapositives, 8 cartes, 6 questions et 4 prompts vérifiés.')
-console.log('Les 28 ressources autonomes sont identiques aux originaux. Mesures, import S13, préservation des champs et exports Markdown vérifiés.')
+console.log('Les 32 ressources autonomes sont identiques aux originaux. Mesures, import S13, préservation des champs et exports Markdown vérifiés.')

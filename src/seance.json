@@ -795,6 +795,31 @@
           "PNG"
         ]
       ]
+    ],
+    [
+      "Dossier 02-PROMPT ? Instructions et prompts ma?tres",
+      [
+        [
+          "02-PROMPT/01-INSTRUCTIONS-PARTICIPANT-S13.md",
+          "INSTRUCTIONS PARTICIPANT S13",
+          "MD"
+        ],
+        [
+          "02-PROMPT/01-INSTRUCTIONS-PARTICIPANT-S14.md",
+          "INSTRUCTIONS PARTICIPANT S14",
+          "MD"
+        ],
+        [
+          "02-PROMPT/02-PROMPT-MAITRE-S13.md",
+          "PROMPT MAITRE S13",
+          "MD"
+        ],
+        [
+          "02-PROMPT/02-PROMPT-MAITRE-S14.md",
+          "PROMPT MAITRE S14",
+          "MD"
+        ]
+      ]
     ]
   ],
   "affiches": [
