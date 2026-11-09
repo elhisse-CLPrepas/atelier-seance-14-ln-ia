@@ -33,6 +33,11 @@ assert.equal(d.affiches.length,5)
 for(const a of d.affiches){assert.equal(d.slides[a.slide][0],a.title);assert(files.includes('ressources/'+a.path))}
 const compiled=await read('dist/index.html'), standalone=await read('OUVRIR-SEANCE-14.html')
 for(const html of [compiled,standalone]){
+ const dossier=html.split('<aside class="prompt-dossier"')[1]?.split('</aside>')[0];
+ assert(dossier,'Encart 02-PROMPT absent');
+ assert(!dossier.includes('?'),'Encodage corrompu dans 02-PROMPT');
+ for(const entity of ['ma&icirc;tres','Pr&eacute;parez','s&eacute;ance','&#9889;','&rarr;','&darr;'])assert(dossier.includes(entity),entity);
+
  for(const id of navigation)assert(html.includes('id="'+id+'"')&&html.includes('href="#'+id+'"'))
  assert.equal((html.match(/<section id="/g)||[]).length,11)
  const ids=[...html.matchAll(/\bid="([\w-]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length)
